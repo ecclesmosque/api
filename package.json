@@ -1,0 +1,35 @@
+{
+  "name": "api.ecclesmosque.org.uk",
+  "version": "1.0.0",
+  "description": "Eccles Mosque API",
+  "main": "index.js",
+  "devDependencies": {
+    "csvtojson": "^1.1.7",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.18.1",
+    "moment-hijri": "^2.0.1",
+    "swagger-ui-dist": "^3.0.19"
+  },
+  "scripts": {
+    "postinstall": "rm -rf swagger-ui-assets && cp -r node_modules/swagger-ui-dist/ swagger-ui-assets",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "rm -rf _prayer-times && node transform.js",
+    "build": "npm run generate && rm -rf _site && bundle exec jekyll build --profile",
+    "start": "rm -rf _site && bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecclesmosque/api.git"
+  },
+  "keywords": [
+    "eccles",
+    "mosque",
+    "api"
+  ],
+  "author": "Azizur Rahman (@azizur)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecclesmosque/api/issues"
+  },
+  "homepage": "https://github.com/ecclesmosque/api#readme"
+}
