@@ -1,0 +1,76 @@
+swagger: '2.0'
+info:
+  description: >-
+    The Eccles and Salford Islamic Society API. You can find out more about
+    Eccles Mosque at [https://ecclesmosque.org.uk](https://ecclesmosque.org.uk)
+    or on [@ecclesmosque](https://twitter.com/ecclesmosque).
+  version: 1.0.0
+  title: Eccles Mosque API
+  termsOfService: 'https://api.ecclesmosque.org.uk/terms/'
+  contact:
+    email: apiteam@ecclesmosque.org.uk
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host: api.ecclesmosque.org.uk
+# tags:
+#   - name: prayer-times
+#     description: Everything about Prayer Times
+#     externalDocs:
+#       description: Find out more
+#       url: 'https://ecclesmosque.org.uk'
+schemes:
+  - https
+
+definitions:
+  days:
+    type: string
+    enum: &DAYS ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"]
+  months:
+    type: string
+    enum: &MONTHS ["01","02","03","04","05","06","07","08","09","10","11","12"]
+  years:
+    type: string
+    enum: &YEARS ["2017"]
+
+paths:
+  '/prayer-times/{year}/{month}/{day}.json':
+    get:
+      summary: Get Prayer Times for a given date
+      description: Returns prayer times for a single day
+      produces:
+        - application/json
+      parameters:
+        - name: year
+          in: path
+          description: Year of Prayer Times Data to return
+          required: true
+          type: string
+          format: YYYY
+          enum: *YEARS
+        - name: month
+          in: path
+          description: Month of Prayer Times Data to return
+          required: true
+          type: string
+          format: MM
+          minimum: 01
+          maximum: 12
+          enum: *MONTHS
+        - name: day
+          in: path
+          description: Day of Prayer Times Data to return
+          required: true
+          type: string
+          format: DD
+          enum: *DAYS
+      responses:
+        '200':
+          description: successful operation
+        '404':
+          description: prayer times data for the given date not found
+
+externalDocs:
+  description: Find out more about Eccles Mosque
+  url: 'https://ecclesmosque.org.uk'
+

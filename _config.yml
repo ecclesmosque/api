@@ -1,1 +1,29 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: Eccles Mosque API
+subtitle: The Eccles and Salford Islamic Society
+description: Eccles and Salford Islamic Society also known as The Eccles Mosque.
+
+include:
+  - _pages
+
+collections:
+  prayer-times:
+    output: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - README.md
+  - LICENSE
+  - vendor
+  - transform.js
+
+gems:
+  - jekyll-feed
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
