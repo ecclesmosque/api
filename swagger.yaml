@@ -49,8 +49,6 @@ paths:
           required: true
           type: string
           format: MM
-          minimum: 01
-          maximum: 12
           enum: *MONTHS
         - name: day
           in: path
@@ -84,8 +82,6 @@ paths:
           required: true
           type: string
           format: MM
-          minimum: 01
-          maximum: 12
           enum: *MONTHS
       responses:
         '200':
