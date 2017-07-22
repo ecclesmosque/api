@@ -13,12 +13,7 @@ info:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
 host: api.ecclesmosque.org.uk
-# tags:
-#   - name: prayer-times
-#     description: Everything about Prayer Times
-#     externalDocs:
-#       description: Find out more
-#       url: 'https://ecclesmosque.org.uk'
+
 schemes:
   - https
 
@@ -36,7 +31,7 @@ definitions:
 paths:
   '/prayer-times/{year}/{month}/{day}.json':
     get:
-      summary: Get Prayer Times for a given date
+      summary: Get Prayer Times for a given day
       description: Returns prayer times for a single day
       produces:
         - application/json
@@ -69,8 +64,35 @@ paths:
           description: successful operation
         '404':
           description: prayer times data for the given date not found
+  '/prayer-times/{year}/{month}/all.json':
+    get:
+      summary: Get Prayer Times for a given month
+      description: Returns prayer times for a single month
+      produces:
+        - application/json
+      parameters:
+        - name: year
+          in: path
+          description: Year of Prayer Times Data to return
+          required: true
+          type: string
+          format: YYYY
+          enum: *YEARS
+        - name: month
+          in: path
+          description: Month of Prayer Times Data to return
+          required: true
+          type: string
+          format: MM
+          minimum: 01
+          maximum: 12
+          enum: *MONTHS
+      responses:
+        '200':
+          description: successful operation
+        '404':
+          description: prayer times data for the given month not found
 
 externalDocs:
   description: Find out more about Eccles Mosque
   url: 'https://ecclesmosque.org.uk'
-
