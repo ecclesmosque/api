@@ -69,31 +69,20 @@ dataFiles.forEach(function (datafile) {
 
       jsonObj.FAJR.STARTS = moment(DATE + ' ' + jsonObj.FAJR.STARTS).format();
       jsonObj.FAJR.JAMAAT = moment(DATE + ' ' + jsonObj.FAJR.JAMAAT).format();
-      jsonObj.FAJR.STARTS_HUMAN_READABLE = moment(jsonObj.FAJR.STARTS).format('hh:mm a');
-      jsonObj.FAJR.JAMAAT_HUMAN_READABLE = moment(jsonObj.FAJR.JAMAAT).format('hh:mm a');
 
       jsonObj.SUNRISE.STARTS = moment(DATE + ' ' + jsonObj.SUNRISE.STARTS).format();
-      jsonObj.SUNRISE.STARTS_HUMAN_READABLE = moment(jsonObj.SUNRISE.STARTS).format('hh:mm a');
 
       jsonObj.DHUHUR.STARTS = moment(DATE + ' ' + jsonObj.DHUHUR.STARTS).format();
       jsonObj.DHUHUR.JAMAAT = moment(DATE + ' ' + jsonObj.DHUHUR.JAMAAT).format();
-      jsonObj.DHUHUR.STARTS_HUMAN_READABLE = moment(jsonObj.DHUHUR.STARTS).format('hh:mm a');
-      jsonObj.DHUHUR.JAMAAT_HUMAN_READABLE = moment(jsonObj.DHUHUR.JAMAAT).format('hh:mm a');
 
       jsonObj.ASR.STARTS = moment(DATE + ' ' + jsonObj.ASR.STARTS).format();
       jsonObj.ASR.JAMAAT = moment(DATE + ' ' + jsonObj.ASR.JAMAAT).format();
-      jsonObj.ASR.STARTS_HUMAN_READABLE = moment(jsonObj.ASR.STARTS).format('hh:mm a');
-      jsonObj.ASR.JAMAAT_HUMAN_READABLE = moment(jsonObj.ASR.JAMAAT).format('hh:mm a');
 
       jsonObj.MAGHRIB.STARTS = moment(DATE + ' ' + jsonObj.MAGHRIB.JAMAAT).format();
       jsonObj.MAGHRIB.JAMAAT = moment(DATE + ' ' + jsonObj.MAGHRIB.JAMAAT).format();
-      jsonObj.MAGHRIB.STARTS_HUMAN_READABLE = moment(jsonObj.MAGHRIB.STARTS).format('hh:mm a');
-      jsonObj.MAGHRIB.JAMAAT_HUMAN_READABLE = moment(jsonObj.MAGHRIB.JAMAAT).format('hh:mm a');
 
       jsonObj.ISHA.STARTS = moment(DATE + ' ' + jsonObj.ISHA.STARTS).format();
       jsonObj.ISHA.JAMAAT = moment(DATE + ' ' + jsonObj.ISHA.JAMAAT).format();
-      jsonObj.ISHA.STARTS_HUMAN_READABLE = moment(jsonObj.ISHA.STARTS).format('hh:mm a');
-      jsonObj.ISHA.JAMAAT_HUMAN_READABLE = moment(jsonObj.ISHA.JAMAAT).format('hh:mm a');
 
     })
     .on('json', (jsonObj) => {
