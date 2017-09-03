@@ -10,17 +10,17 @@
         "spec": ">=3.0.19 <4.0.0",
         "type": "range"
       },
-      "/Users/rahmaa09/projects/ecclesmosque/api"
+      "/Users/rahmaa09/projects/ecclesmosque/api.ecclesmosque.org.uk"
     ]
   ],
   "_from": "swagger-ui-dist@>=3.0.19 <4.0.0",
-  "_id": "swagger-ui-dist@3.0.20",
+  "_id": "swagger-ui-dist@3.1.7",
   "_inCache": true,
   "_location": "/swagger-ui-dist",
   "_nodeVersion": "6.9.5",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/swagger-ui-dist-3.0.20.tgz_1500699538998_0.39616668689996004"
+    "tmp": "tmp/swagger-ui-dist-3.1.7.tgz_1503712504884_0.10092298616655171"
   },
   "_npmUser": {
     "name": "swagger",
@@ -40,11 +40,11 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-3.0.20.tgz",
-  "_shasum": "8900a897b548ea04728a4855d9abd1bed3fd11db",
+  "_resolved": "https://npm.toolshed.tools.bbc.co.uk/swagger-ui-dist/-/swagger-ui-dist-3.1.7.tgz",
+  "_shasum": "6c4a5895c1ba7f094dbada89674dde628fd341dc",
   "_shrinkwrap": null,
   "_spec": "swagger-ui-dist@^3.0.19",
-  "_where": "/Users/rahmaa09/projects/ecclesmosque/api",
+  "_where": "/Users/rahmaa09/projects/ecclesmosque/api.ecclesmosque.org.uk",
   "bugs": {
     "url": "https://github.com/swagger-api/swagger-ui/issues"
   },
@@ -82,15 +82,23 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "8900a897b548ea04728a4855d9abd1bed3fd11db",
-    "tarball": "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-3.0.20.tgz"
+    "shasum": "6c4a5895c1ba7f094dbada89674dde628fd341dc",
+    "tarball": "https://npm.toolshed.tools.bbc.co.uk/swagger-ui-dist/-/swagger-ui-dist-3.1.7.tgz"
   },
   "homepage": "https://github.com/swagger-api/swagger-ui#readme",
   "license": "Apache-2.0",
   "main": "index.js",
   "maintainers": [
     {
+      "name": "kyleshockey",
+      "email": "kyle.shockey1@gmail.com"
+    },
+    {
       "name": "swagger",
+      "email": "apiteam@swagger.io"
+    },
+    {
+      "name": "swagger-api",
       "email": "apiteam@swagger.io"
     }
   ],
@@ -102,5 +110,5 @@
     "url": "git+ssh://git@github.com/swagger-api/swagger-ui.git"
   },
   "scripts": {},
-  "version": "3.0.20"
+  "version": "3.1.7"
 }
