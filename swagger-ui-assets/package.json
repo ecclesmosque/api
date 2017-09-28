@@ -1,53 +1,31 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "swagger-ui-dist@^3.0.19",
-        "scope": null,
-        "escapedName": "swagger-ui-dist",
-        "name": "swagger-ui-dist",
-        "rawSpec": "^3.0.19",
-        "spec": ">=3.0.19 <4.0.0",
-        "type": "range"
-      },
-      "/Users/rahmaa09/projects/ecclesmosque/api.ecclesmosque.org.uk"
-    ]
-  ],
-  "_from": "swagger-ui-dist@>=3.0.19 <4.0.0",
-  "_id": "swagger-ui-dist@3.1.7",
-  "_inCache": true,
+  "_from": "swagger-ui-dist@^3.0.19",
+  "_id": "swagger-ui-dist@3.2.2",
+  "_inBundle": false,
+  "_integrity": "sha1-54JvSvto3T7Yrp11qSria9n16N4=",
   "_location": "/swagger-ui-dist",
-  "_nodeVersion": "6.9.5",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/swagger-ui-dist-3.1.7.tgz_1503712504884_0.10092298616655171"
-  },
-  "_npmUser": {
-    "name": "swagger",
-    "email": "apiteam@swagger.io"
-  },
-  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "swagger-ui-dist@^3.0.19",
-    "scope": null,
-    "escapedName": "swagger-ui-dist",
     "name": "swagger-ui-dist",
+    "escapedName": "swagger-ui-dist",
     "rawSpec": "^3.0.19",
-    "spec": ">=3.0.19 <4.0.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^3.0.19"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://npm.toolshed.tools.bbc.co.uk/swagger-ui-dist/-/swagger-ui-dist-3.1.7.tgz",
-  "_shasum": "6c4a5895c1ba7f094dbada89674dde628fd341dc",
-  "_shrinkwrap": null,
+  "_resolved": "https://npm.toolshed.tools.bbc.co.uk/swagger-ui-dist/-/swagger-ui-dist-3.2.2.tgz",
+  "_shasum": "e7826f4afb68dd3ed8ae9d75a92ae26bd9f5e8de",
   "_spec": "swagger-ui-dist@^3.0.19",
   "_where": "/Users/rahmaa09/projects/ecclesmosque/api.ecclesmosque.org.uk",
   "bugs": {
     "url": "https://github.com/swagger-api/swagger-ui/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "url": "in alphabetical order"
@@ -78,37 +56,16 @@
     }
   ],
   "dependencies": {},
+  "deprecated": false,
   "description": "[![NPM version](https://badge.fury.io/js/swagger-ui-dist.svg)](http://badge.fury.io/js/swagger-ui-dist)",
   "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "6c4a5895c1ba7f094dbada89674dde628fd341dc",
-    "tarball": "https://npm.toolshed.tools.bbc.co.uk/swagger-ui-dist/-/swagger-ui-dist-3.1.7.tgz"
-  },
   "homepage": "https://github.com/swagger-api/swagger-ui#readme",
   "license": "Apache-2.0",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "kyleshockey",
-      "email": "kyle.shockey1@gmail.com"
-    },
-    {
-      "name": "swagger",
-      "email": "apiteam@swagger.io"
-    },
-    {
-      "name": "swagger-api",
-      "email": "apiteam@swagger.io"
-    }
-  ],
   "name": "swagger-ui-dist",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/swagger-api/swagger-ui.git"
   },
-  "scripts": {},
-  "version": "3.1.7"
+  "version": "3.2.2"
 }
