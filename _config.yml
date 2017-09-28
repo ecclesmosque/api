@@ -21,7 +21,7 @@ exclude:
   - vendor
   - transform.js
 
-gems:
+plugins:
   - jekyll-feed
 
 webrick:

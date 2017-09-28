@@ -65,7 +65,7 @@ dataFiles.forEach(function (datafile) {
 
       jsonObj.DAY = moment(DATE).format('dddd');
 
-      jsonObj.HIJRI = hijri(DATE).format('iYYYY-iMM-iD');
+      jsonObj.HIJRI = hijri(DATE).format('iYYYY-iMM-iDD');
 
       jsonObj.FAJR.STARTS = moment(DATE + ' ' + jsonObj.FAJR.STARTS).format();
       jsonObj.FAJR.JAMAAT = moment(DATE + ' ' + jsonObj.FAJR.JAMAAT).format();

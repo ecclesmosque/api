@@ -14,6 +14,13 @@ info:
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
 host: api.ecclesmosque.org.uk
 
+tags:
+- name: "Prayer Times"
+  description: "Prayer Timetable"
+  # externalDocs:
+    # description: "Find out more"
+    # url: "https://ecclesmosque.org.uk/prayer-times/"
+
 schemes:
   - https
 
@@ -31,6 +38,8 @@ definitions:
 paths:
   '/prayer-times/{year}/{month}/{day}.json':
     get:
+      tags:
+        - "Prayer Times"
       summary: Get Prayer Times for a given day
       description: Returns prayer times for a single day
       produces:
@@ -64,6 +73,8 @@ paths:
           description: prayer times data for the given date not found
   '/prayer-times/{year}/{month}/all.json':
     get:
+      tags:
+        - "Prayer Times"
       summary: Get Prayer Times for a given month
       description: Returns prayer times for a single month
       produces:
