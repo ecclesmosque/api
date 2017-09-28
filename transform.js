@@ -1,3 +1,4 @@
+const os = require("os");
 const fs = require('fs');
 const path = require('path');
 const csv = require('csvtojson');
@@ -24,7 +25,7 @@ const saveDailyJSON = (data) => {
 
   mkdirp(DATE_JSON_FILE_DIR, function (err) {
     if (err) console.error(err);
-    fs.writeFile(DATE_JSON_FILE, JSON.stringify(data), 'utf-8', function (err) {
+    fs.writeFile(DATE_JSON_FILE, JSON.stringify(data) + os.EOL, 'utf-8', function (err) {
       if (err) throw err
     });
 
@@ -40,7 +41,7 @@ const saveMonthlyJSON = (date, data) => {
 
   mkdirp(DATE_JSON_FILE_DIR, function (err) {
     if (err) console.error(err);
-    fs.writeFile(DATE_JSON_FILE, JSON.stringify(data), 'utf-8', function (err) {
+    fs.writeFile(DATE_JSON_FILE, JSON.stringify(data) + os.EOL, 'utf-8', function (err) {
       if (err) throw err
     });
 
