@@ -1,37 +1,27 @@
-## Welcome to Eccles Mosque API
+# Welcome to Eccles Mosque API
 
-You can use the [editor on GitHub](https://github.com/ecclesmosque/api/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Eccles Mosque API Consumers
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+If you are looking for Eccles Mosque Prayer Times Data, Please visit https://api.ecclesmosque.org.uk.
 
-### Markdown
+## Development
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Prerequisites
 
-```markdown
-Syntax highlighted code block
+You will need *nix system for development.
 
-# Header 1
-## Header 2
-### Header 3
+* Install ruby via [RVM](https://rvm.io/)
+* Install [Bundler](http://bundler.io/):
+`gem install bundler`
+* Install node via [NVM](https://github.com/creationix/nvm)
 
-- Bulleted
-- List
+### Getting the code up and running
 
-1. Numbered
-2. List
+* Install Ruby gems `bundle install`
+* Install node dependencies `npm install`
+* Run local development version `npm start`
 
-**Bold** and _Italic_ and `Code` text
+You terminal will now show you url to open in your browser to view the local version of the app.
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ecclesmosque/api/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Building static API response from csv
+To build the the static API responses run: `npm run build`.
