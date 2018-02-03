@@ -6,9 +6,9 @@
   "devDependencies": {
     "csvtojson": "^1.1.7",
     "mkdirp": "^0.5.1",
-    "moment": "^2.18.1",
+    "moment": "^2.20.1",
     "moment-hijri": "^2.0.1",
-    "swagger-ui-dist": "^3.0.19"
+    "swagger-ui-dist": "^3.9.3"
   },
   "scripts": {
     "postinstall": "rm -rf swagger-ui-assets && cp -r node_modules/swagger-ui-dist/ swagger-ui-assets",
