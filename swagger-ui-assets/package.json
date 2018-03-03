@@ -2,25 +2,25 @@
   "_args": [
     [
       {
-        "raw": "swagger-ui-dist@^3.0.19",
+        "raw": "swagger-ui-dist@^3.9.3",
         "scope": null,
         "escapedName": "swagger-ui-dist",
         "name": "swagger-ui-dist",
-        "rawSpec": "^3.0.19",
-        "spec": ">=3.0.19 <4.0.0",
+        "rawSpec": "^3.9.3",
+        "spec": ">=3.9.3 <4.0.0",
         "type": "range"
       },
       "/Users/rahmaa09/projects/ecclesmosque/api.ecclesmosque.org.uk"
     ]
   ],
-  "_from": "swagger-ui-dist@>=3.0.19 <4.0.0",
-  "_id": "swagger-ui-dist@3.4.2",
+  "_from": "swagger-ui-dist@>=3.9.3 <4.0.0",
+  "_id": "swagger-ui-dist@3.12.0",
   "_inCache": true,
   "_location": "/swagger-ui-dist",
   "_nodeVersion": "6.9.5",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/swagger-ui-dist-3.4.2.tgz_1509418308270_0.5256992843933403"
+    "tmp": "tmp/swagger-ui-dist_3.12.0_1520054602896_0.7331165246193019"
   },
   "_npmUser": {
     "name": "swagger",
@@ -29,21 +29,21 @@
   "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "swagger-ui-dist@^3.0.19",
+    "raw": "swagger-ui-dist@^3.9.3",
     "scope": null,
     "escapedName": "swagger-ui-dist",
     "name": "swagger-ui-dist",
-    "rawSpec": "^3.0.19",
-    "spec": ">=3.0.19 <4.0.0",
+    "rawSpec": "^3.9.3",
+    "spec": ">=3.9.3 <4.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-3.4.2.tgz",
-  "_shasum": "82d7853473385ef56879048f1a3fca4d8e69689d",
+  "_resolved": "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-3.12.0.tgz",
+  "_shasum": "0a8f34497bc67a7677b1344ecd10e61b3f0a2d70",
   "_shrinkwrap": null,
-  "_spec": "swagger-ui-dist@^3.0.19",
+  "_spec": "swagger-ui-dist@^3.9.3",
   "_where": "/Users/rahmaa09/projects/ecclesmosque/api.ecclesmosque.org.uk",
   "bugs": {
     "url": "https://github.com/swagger-api/swagger-ui/issues"
@@ -82,8 +82,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "82d7853473385ef56879048f1a3fca4d8e69689d",
-    "tarball": "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-3.4.2.tgz"
+    "shasum": "0a8f34497bc67a7677b1344ecd10e61b3f0a2d70",
+    "tarball": "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-3.12.0.tgz",
+    "fileCount": 17,
+    "unpackedSize": 19437728
   },
   "homepage": "https://github.com/swagger-api/swagger-ui#readme",
   "license": "Apache-2.0",
@@ -110,5 +112,5 @@
     "url": "git+ssh://git@github.com/swagger-api/swagger-ui.git"
   },
   "scripts": {},
-  "version": "3.4.2"
+  "version": "3.12.0"
 }
